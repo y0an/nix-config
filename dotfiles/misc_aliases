@@ -1,0 +1,1 @@
+alias kubectl_clean="docker run -it --rm --name kubectl --user=0 --entrypoint=bash -e KUBECONFIG=/root/.kube/config -v $HOME/.minikube:/home/$USER/.minikube -v $HOME/.kube/config:/root/.kube/config bitnami/kubectl:latest"
